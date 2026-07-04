@@ -11,6 +11,7 @@ public:
 
     // Methods
     void init();
+    void run();
 private:
   unsigned long m_screen_width;
   unsigned long m_screen_height;

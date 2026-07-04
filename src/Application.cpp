@@ -18,3 +18,15 @@ void Application::init()
   InitWindow(m_screen_width, m_screen_height, "Template Window");
   SetTargetFPS(m_FPS);
 }
+
+void Application::run()
+{
+  while (!WindowShouldClose()) 
+  {
+    BeginDrawing(); 
+    ClearBackground(RAYWHITE);
+    DrawText("Hello window!", 190, 200, 20, LIGHTGRAY);
+    EndDrawing();
+  }
+  CloseWindow();
+}
